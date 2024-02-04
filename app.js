@@ -38,7 +38,7 @@ function asignarElementoTexto(elemento, texto) {
 function asignarNumeroMaximo() {
     if (numeroMaximo == 0) {
         let nombreUsuario =prompt(`Hola Usuario, Bienvenido a mi juego. \n¿Puedes darme tu nombre?`);
-        let numeroUsuario = prompt(`¡Perfecto ${nombreUsuario}! \nAhora dime del 1 al 1000 ¿Cuánto me amas?`)
+        let numeroUsuario = prompt(`¡Perfecto ${nombreUsuario}! \nAhora dime del 1 al 1000 ¿Cuánto me amas?`);
         switch (numeroUsuario) {
             case (9 < numeroUsuario && numeroUsuario < 1001):
             alert(`Oh, \nPense que dirias infinito pero bueno... aceptaré tus ${numeroUsuario}`);
