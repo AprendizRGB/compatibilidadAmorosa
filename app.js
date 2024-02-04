@@ -7,7 +7,7 @@ function asignarElementoTexto(elemento, texto) {
     return;
 };
 
-/*function asignarNumeroMaximo() {
+function asignarNumeroMaximo() {
     if (numeroMaximo == 0) {
         let nombreUsuario =prompt(`Hola Usuario, Bienvenido a mi juego. \n¿Puedes darme tu nombre?`);
         let numeroUsuario = prompt(`¡Perfecto ${nombreUsuario}! \nAhora dime del 1 al 1000 ¿Cuánto me amas?`)
@@ -33,36 +33,8 @@ function asignarElementoTexto(elemento, texto) {
     } else {
         return;
     };
-};*/
-
-function asignarNumeroMaximo() {
-    if (numeroMaximo == 0) {
-        let nombreUsuario =prompt(`Hola Usuario, Bienvenido a mi juego. \n¿Puedes darme tu nombre?`);
-        let numeroUsuario = prompt(`¡Perfecto ${nombreUsuario}! \nAhora dime del 1 al 1000 ¿Cuánto me amas?`);
-        switch (numeroUsuario) {
-            case (9 < numeroUsuario && numeroUsuario < 1001):
-            alert(`Oh, \nPense que dirias infinito pero bueno... aceptaré tus ${numeroUsuario}`);
-            console.log(`se definio como número maximo a ${numeroUsuario}`);
-            alert(`Ahora te toca Adivinar el número que estoy pensando que está entre el 1 y el ${numeroUsuario}`);
-            return numeroUsuario;
-            break;
-            //El usuario no acerto
-            case (1000 < numeroUsuario):
-                alert(`¡${nombreUsuario}!, estoy seguro que puse 1000 como máximo...\nGracias por amarme tanto <3 \nPero sólo te puedo aceptar 1000 como mucho.`)
-                alert(`Ahora te toca Adivinar el número que estoy pensando que está entre el 1 y el 1000`);
-                return 1000;
-                break;
-            case (10 > numeroUsuario):
-                alert(`Oye como que ${numeroUsuario}!!! \nEso no se hace... mira para mantener mi salud emocional vamos a decir que escogiste al 10`)
-                alert(`Ahora te toca Adivinar el número que estoy pensando que está entre el 1 y el 10`);
-                return 10;
-                break;
-            };
-        //return asignarNumeroMaximo();
-    } else {
-        return;
-    };
 };
+            
 
 condicionesPermanentes();
 
